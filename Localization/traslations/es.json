@@ -1,0 +1,33 @@
+{
+    "Titles":{
+        "login": "Iniciar Sesión",
+        "signup": "Crear Cuenta",
+        "home": "Pagina Principal",
+        "gastos": "Gastos",
+        "ingresos": "Ingresos",
+        "profile": "Perfil de Usuario"
+    },
+    "Login":{
+        "saludo": "Iniciar Sesión",
+        "signup": "No tienes una cuenta? Creala!",
+        "email": "Correo Electrónico",
+        "password": "Contraseña",
+        "login": "Iniciar Sesión"
+    },
+    "Signup":{
+        "saludo": "Crea una cuenta y se parte de esta increible app!",
+        "email" : "Correo Electrónico",
+        "password": "Contraseña",
+        "signup": "Crear Cuenta",
+        "back": "Regresar a Login"
+    },
+    "Ingresos":{
+        "inputDescription": "Descripción",
+        "inputMont": "Monto",
+        "addIngreso": "Añadir Ingreso",
+        "date": "Fecha",
+        "mont": "Monto",
+        "total": "Monto Total"
+    }
+
+}

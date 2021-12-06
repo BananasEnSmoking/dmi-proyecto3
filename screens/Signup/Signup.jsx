@@ -3,6 +3,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { StyledKeyboardAvoidingView, StyledView, StyledText, StyledImage, StyledTextInput, StyledButton, StyledSecondaryButton, StyledSecondaryButtonText } from "../../styles/StyledComponents";
 import logo from "../../media/utags.png";
 import { Text, View } from "react-native";
+import i18n from "../../Localization/i18n";
+
 
 const SignUpPage = () => {
 
@@ -34,10 +36,10 @@ const SignUpPage = () => {
             top={0}
             bottom={10}
           >
-            Create an account and be part of this awesome app!
+            {i18n.t('Signup').saludo}
           </StyledText>
           <StyledTextInput 
-            placeholder="Email"
+            placeholder={i18n.t('Signup').email}
             value={ email }
             onChangeText={(text) => setEmail(text)}
           />
@@ -47,17 +49,17 @@ const SignUpPage = () => {
             onChangeText={(text) => setName(text)}
           />
           <StyledTextInput
-            placeholder="Password"
+            placeholder={i18n.t('Signup').password}
             value={ password }
             onChangeText={(text) => setPassword(text)}
             secureTextEntry
           />
-          <StyledButton title="Signup" onPress={ handleSignup }/>
+          <StyledButton title={i18n.t('Signup').signup} onPress={ handleSignup }/>
           <StyledSecondaryButton
             onPress={() => navigation.replace("Login") }
           >
             <StyledSecondaryButtonText>
-                Go back to login
+            {i18n.t('Signup').back}
               </StyledSecondaryButtonText>           
           </StyledSecondaryButton>
       </StyledView>
